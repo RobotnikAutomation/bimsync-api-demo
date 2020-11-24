@@ -7,7 +7,7 @@
     "start": "node src/server/index.js",
     "build": "webpack --mode production",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
-    "server": "nodemon -r dotenv/config --inspect src/server/index.js",
+    "server": "node -r dotenv/config --inspect src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "eslint": "eslint ./ --ext .js,.jsx --ignore-path ./.eslintignore --max-warnings=0 --cache --fix"
   },
